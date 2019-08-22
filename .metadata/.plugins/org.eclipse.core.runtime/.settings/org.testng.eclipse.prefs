@@ -1,0 +1,9 @@
+TestNG2.outdir=/test-output
+TestNG2.useProjectJar=false
+TestngParameter1.outdir=/test-output
+TestngParameter1.useProjectJar=false
+TestngParameters.outdir=/test-output
+TestngParameters.useProjectJar=false
+TestngSuiteLevelExecution.outdir=/test-output
+TestngSuiteLevelExecution.useProjectJar=false
+eclipse.preferences.version=1

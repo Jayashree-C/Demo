@@ -1,0 +1,17 @@
+package org.india;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class WindowsHandle extends Base {
+	public static void main(String[] args) throws InterruptedException {
+		getDriverAccess();
+		loadUrl("https://www.snapdeal.com/");
+		WebElement search = driver.findElement(By.id("inputValEnter"));
+		fill(search, "iphonex");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[@class='searchTextSpan']")).click();;
+		
+	}
+
+}

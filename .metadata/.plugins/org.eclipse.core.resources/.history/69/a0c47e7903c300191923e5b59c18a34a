@@ -1,0 +1,39 @@
+package org.india;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import junit.framework.Assert;
+
+public class A {
+	static WebDriver driver;
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Jayashree C\\eclipse-workspace\\POMAnnotations\\driver\\chromedriver.exe");
+driver=new ChromeDriver();
+
+driver.get("https://www.facebook.com");
+
+	}
+
+	@Test
+	
+	public void tc1() {
+	Assert.assertTrue(driver.getCurrentUrl().contains("https://www.facebook.com"));	
+	Assert.assertEquals("Facebook",driver.getTitle());
+	
+	}
+	@Test
+	public void tc2() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Jayashree C\\eclipse-workspace\\POMAnnotations\\driver\\chromedriver.exe");
+driver=new ChromeDriver();
+
+driver.get("https://www.instagram.com/");
+
+	}
+
+	}
+	
+	
+

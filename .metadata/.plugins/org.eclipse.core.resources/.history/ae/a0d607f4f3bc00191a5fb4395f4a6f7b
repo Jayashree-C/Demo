@@ -1,0 +1,24 @@
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class RedPage extends Base {
+	public RedPage()
+	{
+		PageFactory.initElements(driver, this);
+		
+	}
+		@FindBy(id="src") 
+		private WebElement src1;
+		public WebElement getSrc1() {
+			return src1;
+		}
+		@FindBy(id="dest") 
+		private WebElement des1;
+		public WebElement getDes1() {
+			return des1;
+		}
+		
+	}
+
+

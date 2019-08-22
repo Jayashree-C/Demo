@@ -1,0 +1,13 @@
+
+public class Redbus extends Base {
+
+	public static void main(String[] args) {
+	getDriverAccess();
+	loadUrl("https://www.redbus.in/");
+	RedPage a =new RedPage();
+	fill(a.getSrc1(), "Chennai");
+	fill(a.getDes1(), "Trichy");
+
+	}
+
+}

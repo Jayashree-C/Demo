@@ -1,0 +1,42 @@
+package org.india;
+
+import java.util.List;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import junit.framework.Assert;
+
+public class A {
+	static WebDriver driver;
+
+
+	@Test
+	
+	public void tc1() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Jayashree C\\eclipse-workspace\\POMAnnotations\\driver\\chromedriver.exe");
+driver=new ChromeDriver();
+
+driver.get("https://www.facebook.com");
+			Assert.assertTrue(driver.getTitle().contains("Facebook"));
+			List<WebElement> user = driver.findElements(By.id("email"));
+			((WebElement) user).sendKeys("2345");
+	
+	}
+	@Test
+	public void tc2() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Jayashree C\\eclipse-workspace\\POMAnnotations\\driver\\chromedriver.exe");
+driver=new ChromeDriver();
+
+driver.get("https://www.instagram.com/");
+
+	}
+
+	}
+	
+	
+

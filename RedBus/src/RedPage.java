@@ -1,0 +1,86 @@
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class RedPage extends Base {
+	public RedPage()
+	{
+		PageFactory.initElements(driver, this);
+		
+	}
+		@FindBy(id="src") 
+		private WebElement src1;
+		
+		@FindBy(id="dest") 
+		private WebElement des1;
+		
+		@FindBy(xpath="//input[@id='onward_cal']")
+		private WebElement clk;
+		@FindBy(xpath="(//td[text()='22'])[1]")
+		private WebElement date; 
+		@FindBy(id="return_cal")
+		private WebElement rclk;
+		@FindBy(xpath="(//td[text()='14'][1]")
+		private WebElement returnDate;
+		@FindBy(id="search_btn")
+		private WebElement searchbus;
+		
+		
+		
+		
+		public WebElement getSrc1() {
+			return src1;
+		}
+
+
+
+
+		public WebElement getDes1() {
+			return des1;
+		}
+
+
+
+
+		public WebElement getClk() {
+			return clk;
+		}
+
+
+
+
+		public WebElement getDate() {
+			return date;
+		}
+
+
+
+
+		public WebElement getRclk() {
+			return rclk;
+		}
+
+
+
+
+		public WebElement getReturnDate() {
+			return returnDate;
+		}
+
+
+
+
+		public WebElement getSearchbus() {
+			return searchbus;
+		}
+
+
+
+
+		{
+			
+		}
+
+	}
+
+

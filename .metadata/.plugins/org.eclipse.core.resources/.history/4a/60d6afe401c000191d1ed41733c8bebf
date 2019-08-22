@@ -1,0 +1,17 @@
+import java.awt.AWTException;
+
+public class MakeMyTrip extends Base {
+
+	public static void main(String[] args) throws AWTException {
+		getDriverAccess();
+		loadUrl("https://www.makemytrip.com/flights/?gclid=EAIaIQobChMIxZOApeiE5AIVkoBwCh3BbQ6HEAAYASAAEgIf0PD_BwE&cmp=SEM|D|DF|G|Brand|B_M_Makemytrip_Search_Exact|Brand_Top_5_Exact|Expanded|263079100974&s_kwcid=AL!1631!3!263079100974!e!!g!!makemytrip&ef_id=EAIaIQobChMIxZOApeiE5AIVkoBwCh3BbQ6HEAAYASAAEgIf0PD_BwE:G:s");
+MakePage a=new MakePage();
+		click(a.getFromloc());
+		VK2();
+		Enter();
+		click(a.getDesloc());
+		VK3();
+		
+	}
+
+}
